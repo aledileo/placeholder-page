@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+::selection {
+  background: #f48fb1;
+  opacity: 0.3;
+}
+
+span,
+p {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    margin-left: 25vw;
+  }
+}
+
+body {
+  background-color: #121212;
+  max-width: 720px;
+}
+
+h1,
+h2 {
+  font-size: 24px;
+  opacity: 0.87;
+}
+
+section h1 {
+  text-align: center;
+}
+
+article {
+  margin: 32px 8px;
+}
+
+.title {
+  margin: 128px 8px;
+}
+
+.languageLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.languageItems {
+  margin: 8px 16px;
+}
+
+.pinkText {
+  color: #f48fb1;
+  opacity: 0.87;
+}
+
+.active {
+  color: #f48fb1;
+  text-decoration: underline;
+  opacity: 0.87;
+}
+
+.disable {
+  opacity: 0.38;
+}
+
+.projectsContainer {
+  text-align: center;
+}
+
+.projectsContainer > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 8px auto;
+}
+
+.svgIcon {
+  opacity: 0.6;
+  margin-right: 16px;
+}
+
+.contactItem {
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+}
