@@ -77,6 +77,10 @@ article {
   opacity: 0.87;
 }
 
+.active:hover {
+  cursor: pointer;
+}
+
 .disable {
   opacity: 0.38;
 }
