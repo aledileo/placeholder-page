@@ -28,7 +28,7 @@ p {
   opacity: 0.6;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   body {
     margin-left: 25vw;
   }
