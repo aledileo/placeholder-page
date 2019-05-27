@@ -4,6 +4,18 @@
   font-weight: 100;
 }
 
+:root {
+  --primary-color: #009688;
+  --background-color: #fafafa;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --primary-color: #f48fb1;
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
 h1,
 h2,
 h3,
@@ -15,11 +27,11 @@ span,
 a {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 ::selection {
-  background: #f48fb1;
+  background: var(--primary-color);
   opacity: 0.3;
 }
 
@@ -35,7 +47,7 @@ p {
 }
 
 body {
-  background-color: #121212;
+  background-color: var(--background-color);
   max-width: 720px;
 }
 
@@ -53,6 +65,12 @@ article {
   margin: 32px 8px;
 }
 
+.themeSwitcher {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+}
+
 .title {
   margin: 128px 8px;
 }
@@ -60,6 +78,7 @@ article {
 .languageLinks {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .languageItems {
@@ -67,12 +86,13 @@ article {
 }
 
 .pinkText {
-  color: #f48fb1;
+  color: var(--primary-color);
   opacity: 0.87;
+  font-weight: 800;
 }
 
 .active {
-  color: #f48fb1;
+  color: var(--primary-color);
   text-decoration: underline;
   opacity: 0.87;
 }
@@ -99,6 +119,10 @@ article {
 .svgIcon {
   opacity: 0.6;
   margin-right: 16px;
+}
+
+.svgIconPath {
+  fill: var(--primary-color);
 }
 
 .contactItem {
