@@ -5,13 +5,15 @@
 }
 
 :root {
-  --primary-color: #009688;
+  --primary-color: #673ab7;
+  --highlight-color: #b39ddb;
   --background-color: #fafafa;
   --text-color: #000000;
 }
 
 [data-theme="dark"] {
   --primary-color: #f48fb1;
+  --highlight-color: #fce4ec;
   --background-color: #121212;
   --text-color: #ffffff;
 }
@@ -31,7 +33,7 @@ a {
 }
 
 ::selection {
-  background: var(--primary-color);
+  background: var(--highlight-color);
   opacity: 0.3;
 }
 
