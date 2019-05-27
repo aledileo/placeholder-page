@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Open Sans";
+  font-display: fallback;
   src: url("../assets/fonts/OpenSans-Light.ttf");
   font-weight: 100;
 }
@@ -30,6 +31,10 @@ a {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 ::selection {
