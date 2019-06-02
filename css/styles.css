@@ -64,6 +64,9 @@ h2 {
   opacity: 0.87;
 }
 
+h3 {
+  margin: 0.5rem;
+}
 section h1 {
   text-align: center;
 }
@@ -113,14 +116,34 @@ article {
 }
 
 .projectsContainer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
-.projectsContainer > img {
+@media (max-width: 767px) {
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 50%;
+  }
+}
+
+.card > a > img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
   margin: 8px auto;
+  border: var(--primary-color) 1px solid;
+}
+
+.cardContent {
+  max-width: 100%;
+  text-align: center;
+  border: var(--primary-color) 1px solid;
+  padding: 1rem;
 }
 
 .svgIcon {
